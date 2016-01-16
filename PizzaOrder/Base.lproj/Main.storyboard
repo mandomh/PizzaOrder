@@ -202,7 +202,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbD-Xg-mVU">
                                 <rect key="frame" x="32" y="350" width="88" height="30"/>
-                                <state key="normal" title="Cofirmar"/>
+                                <state key="normal" title="Confirmar"/>
                                 <connections>
                                     <action selector="confirmButtonClick:" destination="da7-2K-OTS" eventType="touchDown" id="sZU-tg-acu"/>
                                 </connections>

@@ -31,10 +31,6 @@ class PizzaIngredientsViewController: UIViewController {
     }
     
     func onSwitchChange(noSelected: Int) {
-        if (noSelected > 0) {
-            confirmationButton.enabled = true
-        } else {
-            confirmationButton.enabled = false
-        }
+       confirmationButton.enabled = noSelected > 0
     }
 }
