@@ -11,10 +11,11 @@ import UIKit
 class PizzaIngredientsViewController: UIViewController {
 
     @IBOutlet weak var ingredientsMultipleSelection: MultipleSelectionControl!
+    @IBOutlet weak var confirmationButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        ingredientsMultipleSelection.onSwitchChange = self.onSwitchChange
         // Do any additional setup after loading the view.
     }
 
@@ -25,5 +26,15 @@ class PizzaIngredientsViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         ingredientsMultipleSelection.updateSwitches()
+        confirmationButton.enabled = pizzaOrder.ingredients.count > 0
+        
+    }
+    
+    func onSwitchChange(noSelected: Int) {
+        if (noSelected > 0) {
+            confirmationButton.enabled = true
+        } else {
+            confirmationButton.enabled = false
+        }
     }
 }

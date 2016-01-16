@@ -22,6 +22,8 @@ class MultipleSelectionControl: UIView {
     let labelYPositionPlus = 5
     let rowSeparation = 8
     let values = [String]()
+    let maxIngredients = 5
+    var onSwitchChange: ((Int) -> ())? = nil
 
     var switches = [UISwitch]()
     
@@ -29,6 +31,7 @@ class MultipleSelectionControl: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        
         var y = 0
         for ingredient in INGREDIENT.values {
             let switchComponent = UISwitch(frame: CGRect(x: initialX, y: y, width: switchWidth, height: switchHeight))
@@ -54,6 +57,20 @@ class MultipleSelectionControl: UIView {
             if (i != nil) {
                 pizzaOrder.ingredients.removeAtIndex(i!)
             }
+        }
+        if (pizzaOrder.ingredients.count >= 5) {
+            for uiswitch in switches {
+                if (!uiswitch.on) {
+                    uiswitch.enabled = false
+                }
+            }
+        } else {
+            for uiswitch in switches {
+                uiswitch.enabled = true
+            }
+        }
+        if (onSwitchChange != nil) {
+            onSwitchChange!(pizzaOrder.ingredients.count)
         }
     }
     
