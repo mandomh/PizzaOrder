@@ -9,10 +9,32 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>PizzaOrderMobile.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>PizzaOrderWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>807D161C1C4920950098E96A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>80DA2C8D1C4FDF000034D254</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>80DA2CB21C4FE7300034D254</key>
 		<dict>
 			<key>primary</key>
 			<true/>

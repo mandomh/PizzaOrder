@@ -32,7 +32,7 @@ enum CHEESE: String {
 }
 
 enum INGREDIENT: String {
-    case ham = "Jamón", pepperoni = "Pepperoni", turkey = "Pavo", sausage = "Salchicha", olives = "Aceitunes", onion = "Cebolla", sweet_pepper = "Pimiento", pineapple = "Piña", anchovies = "Anchoas"
+    case ham = "Jamón", pepperoni = "Pepperoni", turkey = "Pavo", sausage = "Salchicha", olives = "Aceitunas", onion = "Cebolla", sweet_pepper = "Pimiento", pineapple = "Piña", anchovies = "Anchoas"
     static let values = [ham, pepperoni, turkey, sausage, olives, onion, sweet_pepper, pineapple, anchovies]
 }
 

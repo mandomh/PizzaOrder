@@ -16,9 +16,65 @@
 		807D16351C4A354D0098E96A /* PizzaCheeseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807D16341C4A354D0098E96A /* PizzaCheeseViewController.swift */; };
 		807D16371C4A36F90098E96A /* PizzaIngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807D16361C4A36F90098E96A /* PizzaIngredientsViewController.swift */; };
 		807D16391C4A38810098E96A /* MultipleSelectionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807D16381C4A38810098E96A /* MultipleSelectionControl.swift */; };
-		807D163B1C4A44140098E96A /* PizzaOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807D163A1C4A44140098E96A /* PizzaOrder.swift */; };
 		807D163D1C4A47570098E96A /* PizzaConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807D163C1C4A47570098E96A /* PizzaConfirmationViewController.swift */; };
+		80DA2CB71C4FE7300034D254 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DA2CB51C4FE7300034D254 /* Interface.storyboard */; };
+		80DA2CB91C4FE7300034D254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80DA2CB81C4FE7300034D254 /* Assets.xcassets */; };
+		80DA2CC01C4FE7300034D254 /* PizzaOrderWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 80DA2CBF1C4FE7300034D254 /* PizzaOrderWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		80DA2CC51C4FE7300034D254 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DA2CC41C4FE7300034D254 /* InterfaceController.swift */; };
+		80DA2CC71C4FE7300034D254 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DA2CC61C4FE7300034D254 /* ExtensionDelegate.swift */; };
+		80DA2CC91C4FE7300034D254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80DA2CC81C4FE7300034D254 /* Assets.xcassets */; };
+		80DA2CCD1C4FE7300034D254 /* PizzaOrderWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 80DA2CB31C4FE7300034D254 /* PizzaOrderWatch.app */; };
+		80DA2CD81C4FF07B0034D254 /* PizzaOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807D163A1C4A44140098E96A /* PizzaOrder.swift */; };
+		80DA2CDA1C51B1DF0034D254 /* SizeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DA2CD91C51B1DF0034D254 /* SizeInterfaceController.swift */; };
+		80DA2CDB1C51B2C70034D254 /* PizzaOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807D163A1C4A44140098E96A /* PizzaOrder.swift */; };
+		80DA2CDD1C51BCB80034D254 /* DoughInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DA2CDC1C51BCB80034D254 /* DoughInterfaceController.swift */; };
+		80DA2CDF1C51BF440034D254 /* CheeseInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DA2CDE1C51BF440034D254 /* CheeseInterfaceController.swift */; };
+		80DA2CE11C51C3600034D254 /* IngredientsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DA2CE01C51C3600034D254 /* IngredientsInterfaceController.swift */; };
+		80DA2CE31C51C9E10034D254 /* IngredientRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DA2CE21C51C9E10034D254 /* IngredientRowType.swift */; };
+		80DA2CE51C529A5A0034D254 /* ConfirmationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DA2CE41C529A5A0034D254 /* ConfirmationInterfaceController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80DA2CC11C4FE7300034D254 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 807D16151C4920950098E96A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80DA2CBE1C4FE7300034D254;
+			remoteInfo = "PizzaOrderWatch Extension";
+		};
+		80DA2CCB1C4FE7300034D254 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 807D16151C4920950098E96A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80DA2CB21C4FE7300034D254;
+			remoteInfo = PizzaOrderWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		80DA2CB01C4FDF000034D254 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				80DA2CCD1C4FE7300034D254 /* PizzaOrderWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80DA2CD11C4FE7300034D254 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				80DA2CC01C4FE7300034D254 /* PizzaOrderWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		807D161D1C4920950098E96A /* PizzaOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,10 +90,32 @@
 		807D16381C4A38810098E96A /* MultipleSelectionControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleSelectionControl.swift; sourceTree = "<group>"; };
 		807D163A1C4A44140098E96A /* PizzaOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaOrder.swift; sourceTree = "<group>"; };
 		807D163C1C4A47570098E96A /* PizzaConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaConfirmationViewController.swift; sourceTree = "<group>"; };
+		80DA2CB31C4FE7300034D254 /* PizzaOrderWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaOrderWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80DA2CB61C4FE7300034D254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		80DA2CB81C4FE7300034D254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80DA2CBA1C4FE7300034D254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80DA2CBF1C4FE7300034D254 /* PizzaOrderWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PizzaOrderWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80DA2CC41C4FE7300034D254 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		80DA2CC61C4FE7300034D254 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		80DA2CC81C4FE7300034D254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80DA2CCA1C4FE7300034D254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80DA2CD91C51B1DF0034D254 /* SizeInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeInterfaceController.swift; sourceTree = "<group>"; };
+		80DA2CDC1C51BCB80034D254 /* DoughInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoughInterfaceController.swift; sourceTree = "<group>"; };
+		80DA2CDE1C51BF440034D254 /* CheeseInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheeseInterfaceController.swift; sourceTree = "<group>"; };
+		80DA2CE01C51C3600034D254 /* IngredientsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsInterfaceController.swift; sourceTree = "<group>"; };
+		80DA2CE21C51C9E10034D254 /* IngredientRowType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientRowType.swift; sourceTree = "<group>"; };
+		80DA2CE41C529A5A0034D254 /* ConfirmationInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		807D161A1C4920950098E96A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80DA2CBC1C4FE7300034D254 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				807D161F1C4920950098E96A /* PizzaOrder */,
+				80DA2CB41C4FE7300034D254 /* PizzaOrderWatch */,
+				80DA2CC31C4FE7300034D254 /* PizzaOrderWatch Extension */,
 				807D161E1C4920950098E96A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				807D161D1C4920950098E96A /* PizzaOrder.app */,
+				80DA2CB31C4FE7300034D254 /* PizzaOrderWatch.app */,
+				80DA2CBF1C4FE7300034D254 /* PizzaOrderWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +164,33 @@
 			path = PizzaOrder;
 			sourceTree = "<group>";
 		};
+		80DA2CB41C4FE7300034D254 /* PizzaOrderWatch */ = {
+			isa = PBXGroup;
+			children = (
+				80DA2CB81C4FE7300034D254 /* Assets.xcassets */,
+				80DA2CBA1C4FE7300034D254 /* Info.plist */,
+				80DA2CB51C4FE7300034D254 /* Interface.storyboard */,
+			);
+			path = PizzaOrderWatch;
+			sourceTree = "<group>";
+		};
+		80DA2CC31C4FE7300034D254 /* PizzaOrderWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				80DA2CC41C4FE7300034D254 /* InterfaceController.swift */,
+				80DA2CC61C4FE7300034D254 /* ExtensionDelegate.swift */,
+				80DA2CD91C51B1DF0034D254 /* SizeInterfaceController.swift */,
+				80DA2CDC1C51BCB80034D254 /* DoughInterfaceController.swift */,
+				80DA2CDE1C51BF440034D254 /* CheeseInterfaceController.swift */,
+				80DA2CE01C51C3600034D254 /* IngredientsInterfaceController.swift */,
+				80DA2CE21C51C9E10034D254 /* IngredientRowType.swift */,
+				80DA2CE41C529A5A0034D254 /* ConfirmationInterfaceController.swift */,
+				80DA2CC81C4FE7300034D254 /* Assets.xcassets */,
+				80DA2CCA1C4FE7300034D254 /* Info.plist */,
+			);
+			path = "PizzaOrderWatch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,15 +201,51 @@
 				807D16191C4920950098E96A /* Sources */,
 				807D161A1C4920950098E96A /* Frameworks */,
 				807D161B1C4920950098E96A /* Resources */,
+				80DA2CB01C4FDF000034D254 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				80DA2CCC1C4FE7300034D254 /* PBXTargetDependency */,
 			);
 			name = PizzaOrder;
 			productName = PizzaOrder;
 			productReference = 807D161D1C4920950098E96A /* PizzaOrder.app */;
 			productType = "com.apple.product-type.application";
+		};
+		80DA2CB21C4FE7300034D254 /* PizzaOrderWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80DA2CD21C4FE7300034D254 /* Build configuration list for PBXNativeTarget "PizzaOrderWatch" */;
+			buildPhases = (
+				80DA2CB11C4FE7300034D254 /* Resources */,
+				80DA2CD11C4FE7300034D254 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80DA2CC21C4FE7300034D254 /* PBXTargetDependency */,
+			);
+			name = PizzaOrderWatch;
+			productName = PizzaOrderWatch;
+			productReference = 80DA2CB31C4FE7300034D254 /* PizzaOrderWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		80DA2CBE1C4FE7300034D254 /* PizzaOrderWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80DA2CCE1C4FE7300034D254 /* Build configuration list for PBXNativeTarget "PizzaOrderWatch Extension" */;
+			buildPhases = (
+				80DA2CBB1C4FE7300034D254 /* Sources */,
+				80DA2CBC1C4FE7300034D254 /* Frameworks */,
+				80DA2CBD1C4FE7300034D254 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PizzaOrderWatch Extension";
+			productName = "PizzaOrderWatch Extension";
+			productReference = 80DA2CBF1C4FE7300034D254 /* PizzaOrderWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -113,6 +258,14 @@
 				ORGANIZATIONNAME = "Armando Muñoz Hernández";
 				TargetAttributes = {
 					807D161C1C4920950098E96A = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = SJHHULHX5H;
+					};
+					80DA2CB21C4FE7300034D254 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = SJHHULHX5H;
+					};
+					80DA2CBE1C4FE7300034D254 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = SJHHULHX5H;
 					};
@@ -132,6 +285,8 @@
 			projectRoot = "";
 			targets = (
 				807D161C1C4920950098E96A /* PizzaOrder */,
+				80DA2CB21C4FE7300034D254 /* PizzaOrderWatch */,
+				80DA2CBE1C4FE7300034D254 /* PizzaOrderWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -147,6 +302,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		80DA2CB11C4FE7300034D254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80DA2CB91C4FE7300034D254 /* Assets.xcassets in Resources */,
+				80DA2CB71C4FE7300034D254 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80DA2CBD1C4FE7300034D254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80DA2CC91C4FE7300034D254 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -158,14 +330,43 @@
 				807D16351C4A354D0098E96A /* PizzaCheeseViewController.swift in Sources */,
 				807D16391C4A38810098E96A /* MultipleSelectionControl.swift in Sources */,
 				807D16331C4930DC0098E96A /* PizzaDoughViewController.swift in Sources */,
-				807D163B1C4A44140098E96A /* PizzaOrder.swift in Sources */,
 				807D16231C4920950098E96A /* PizzaSizeViewController.swift in Sources */,
+				80DA2CD81C4FF07B0034D254 /* PizzaOrder.swift in Sources */,
 				807D163D1C4A47570098E96A /* PizzaConfirmationViewController.swift in Sources */,
 				807D16211C4920950098E96A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		80DA2CBB1C4FE7300034D254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80DA2CDF1C51BF440034D254 /* CheeseInterfaceController.swift in Sources */,
+				80DA2CE51C529A5A0034D254 /* ConfirmationInterfaceController.swift in Sources */,
+				80DA2CDD1C51BCB80034D254 /* DoughInterfaceController.swift in Sources */,
+				80DA2CC71C4FE7300034D254 /* ExtensionDelegate.swift in Sources */,
+				80DA2CDB1C51B2C70034D254 /* PizzaOrder.swift in Sources */,
+				80DA2CE11C51C3600034D254 /* IngredientsInterfaceController.swift in Sources */,
+				80DA2CE31C51C9E10034D254 /* IngredientRowType.swift in Sources */,
+				80DA2CC51C4FE7300034D254 /* InterfaceController.swift in Sources */,
+				80DA2CDA1C51B1DF0034D254 /* SizeInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80DA2CC21C4FE7300034D254 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80DA2CBE1C4FE7300034D254 /* PizzaOrderWatch Extension */;
+			targetProxy = 80DA2CC11C4FE7300034D254 /* PBXContainerItemProxy */;
+		};
+		80DA2CCC1C4FE7300034D254 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80DA2CB21C4FE7300034D254 /* PizzaOrderWatch */;
+			targetProxy = 80DA2CCB1C4FE7300034D254 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		807D16241C4920960098E96A /* Main.storyboard */ = {
@@ -182,6 +383,14 @@
 				807D162A1C4920960098E96A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		80DA2CB51C4FE7300034D254 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80DA2CB61C4FE7300034D254 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -292,6 +501,73 @@
 			};
 			name = Release;
 		};
+		80DA2CCF1C4FE7300034D254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PizzaOrderWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.amh.PizzaOrder.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		80DA2CD01C4FE7300034D254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PizzaOrderWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.amh.PizzaOrder.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		80DA2CD31C4FE7300034D254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PizzaOrderWatch_Extension;
+				INFOPLIST_FILE = PizzaOrderWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.amh.PizzaOrder.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PizzaOrderWatch/PizzaOrderWatch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		80DA2CD41C4FE7300034D254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PizzaOrderWatch_Extension;
+				INFOPLIST_FILE = PizzaOrderWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.amh.PizzaOrder.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PizzaOrderWatch/PizzaOrderWatch-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -309,6 +585,23 @@
 			buildConfigurations = (
 				807D16301C4920960098E96A /* Debug */,
 				807D16311C4920960098E96A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80DA2CCE1C4FE7300034D254 /* Build configuration list for PBXNativeTarget "PizzaOrderWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80DA2CCF1C4FE7300034D254 /* Debug */,
+				80DA2CD01C4FE7300034D254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		80DA2CD21C4FE7300034D254 /* Build configuration list for PBXNativeTarget "PizzaOrderWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80DA2CD31C4FE7300034D254 /* Debug */,
+				80DA2CD41C4FE7300034D254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
